@@ -1,19 +1,22 @@
 import { Meta, StoryObj } from "@storybook/react";
-import ProductCard from ".";
+import categoryImage from "../../assets/images/category-1.jpg";
+import CategoryCard from ".";
 
 const meta = {
-  title: "Library/Cards/Product Card",
-  component: ProductCard,
+  title: "Library/Cards/Category Card",
+  component: CategoryCard,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
   argTypes: {},
-} satisfies Meta<typeof ProductCard>;
+} satisfies Meta<typeof CategoryCard>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
-  args: {},
+  args: {
+    image: categoryImage,
+  },
 };

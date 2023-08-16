@@ -1,0 +1,39 @@
+.item-list {
+  @apply flex items-center gap-5 min-w-[600px] border-b pb-6;
+
+  &:last-child {
+    @apply border-b-0;
+  }
+
+  .item-img {
+    @apply w-[55px] h-[55px];
+  }
+
+  .item-img button {
+    @apply hidden;
+  }
+
+  .item-add-cart {
+    @apply hidden;
+  }
+
+  .item-price-card {
+    @apply hidden;
+  }
+
+  .item-price-list {
+    @apply block;
+  }
+
+  .item-description {
+    @apply hidden;
+  }
+
+  .item-details {
+    @apply flex items-center justify-between w-full mt-0;
+  }
+}
+
+.item-price-list {
+  @apply hidden;
+}

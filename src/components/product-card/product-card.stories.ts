@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import ProductCard from ".";
+import productImg from '../../assets/images/1.jpg';
 
 const meta = {
   title: "Library/Cards/Product Card",
@@ -15,5 +16,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
-  args: {},
+  args: {
+    image: productImg
+  },
 };

@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import categoryImage from "../../assets/images/category-1.jpg";
-import CategoryCard from ".";
+import { CategoryCard } from ".";
 
 const meta = {
   title: "Library/Cards/Category Card",
@@ -8,7 +8,6 @@ const meta = {
   parameters: {
     layout: "centered",
   },
-  tags: ["autodocs"],
   argTypes: {},
 } satisfies Meta<typeof CategoryCard>;
 

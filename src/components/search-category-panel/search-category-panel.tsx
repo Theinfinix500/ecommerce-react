@@ -1,4 +1,4 @@
-import SearchCategoryCard from "../search-category-card";
+import { SearchCategoryCard } from "../search-category-card";
 import headphoneImage from "../../assets/images/category-1.jpg";
 import watchImage from "../../assets/images/category-2.jpg";
 

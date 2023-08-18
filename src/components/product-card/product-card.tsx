@@ -9,7 +9,7 @@ interface ProductCardProps {
 const ProductCard = ({ image, layout = "card" }: ProductCardProps) => {
   return (
     <div className={layout === "list" ? "item-list" : ""}>
-      <div className="item-img h-[295px] w-[295px] bg-gray-light rounded-lg relative">
+      <div className="item-img h-[295px] w-[295px] bg-gray-100 rounded-lg relative">
         <img
           src={image}
           alt="product-image"
@@ -20,26 +20,26 @@ const ProductCard = ({ image, layout = "card" }: ProductCardProps) => {
         </button>
       </div>
       <div className="item-details mt-4">
-        <div className="flex items-center justify-between gap-2 text-black-default">
+        <div className="flex items-center justify-between gap-2 text-black">
           <h1 className="font-bold">Wireless Headphones, IPX8</h1>
           <span className="item-price-card font-bold">89.00</span>
         </div>
-        <p className="item-description my-2 text-xs text-gray-default font-bold">
+        <p className="item-description my-2 text-xs text-gray-500 font-bold">
           Organic Cotton, fairtrade certified
         </p>
         <div className="flex items-center gap-1">
           <span className="flex items-center">
             {Array.from({ length: 5 }, (_, i) => i + 1).map((_) => (
-              <IoStar className="text-green" />
+              <IoStar className="text-green-600" />
             ))}
           </span>
-          <span className="text-gray-default text-sm font-semibold">(121)</span>
+          <span className="text-gray-500 text-sm font-semibold">(121)</span>
         </div>
         <div className="item-price-list">
           <span className="font-bold">89.00</span>
         </div>
         <div className="item-add-cart mt-4">
-          <button className="px-[18px] py-[6px] border-2 border-black-darker font-semibold text-black-darker rounded-full">
+          <button className="px-[18px] py-[6px] border-2 border-black font-semibold text-black rounded-full">
             Add to Cart
           </button>
         </div>

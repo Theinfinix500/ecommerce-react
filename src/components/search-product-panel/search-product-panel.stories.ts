@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import SearchProductPanel from ".";
+import { SearchProductPanel } from ".";
 
 const meta = {
   title: "Library/Panels/Search Product Panel",
@@ -7,12 +7,11 @@ const meta = {
   parameters: {
     layout: "centered",
   },
-  tags: ["autodocs"],
   argTypes: {
     layout: {
-        control: 'radio',
-        options: ['list', 'card']
-    }
+      control: "radio",
+      options: ["list", "card"],
+    },
   },
 } satisfies Meta<typeof SearchProductPanel>;
 

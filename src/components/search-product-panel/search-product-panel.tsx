@@ -1,4 +1,4 @@
-import ProductCard from "../product-card";
+import { ProductCard } from "../product-card";
 import headphoneImage from "../../assets/images/category-1.jpg";
 import watchImage from "../../assets/images/category-2.jpg";
 

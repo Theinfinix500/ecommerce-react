@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import categoryImage from "../../assets/images/category-1.jpg";
-import SearchCategoryCard from ".";
+import { SearchCategoryCard } from ".";
 
 const meta = {
   title: "Library/Cards/Search Category Card",
@@ -8,7 +8,6 @@ const meta = {
   parameters: {
     layout: "centered",
   },
-  tags: ["autodocs"],
   argTypes: {},
 } satisfies Meta<typeof SearchCategoryCard>;
 

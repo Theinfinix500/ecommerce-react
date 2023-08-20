@@ -7,16 +7,16 @@ import {
 } from "@/components/ui/select";
 import { Option } from "@/models/options.model";
 
-interface FilterSelectProps {
+interface SortSelectProps {
   placeholder: string;
   options: Option[];
 }
 
-const FilterSelect = ({ placeholder, options }: FilterSelectProps) => {
+const SortSelect = ({ placeholder, options }: SortSelectProps) => {
   const selectItems = options.map(({ label, value }) => (
     <SelectItem value={value}>{label}</SelectItem>
   ));
-  
+
   return (
     <Select>
       <SelectTrigger className="w-[180px] bg-gray-200 rounded-full">
@@ -30,4 +30,4 @@ const FilterSelect = ({ placeholder, options }: FilterSelectProps) => {
   );
 };
 
-export default FilterSelect;
+export default SortSelect;

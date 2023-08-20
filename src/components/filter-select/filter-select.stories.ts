@@ -15,6 +15,12 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    placeholder: 'Test'
+    placeholder: "Test",
+    options: [
+      {
+        label: "Filter",
+        value: "filter",
+      },
+    ],
   },
 };

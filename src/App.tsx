@@ -1,17 +1,8 @@
-import { useState } from "react";
 import "./App.css";
-import { Button } from "@/components/ui/button";
+import Layout from "@/components/layout/Layout";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <>
-      <Button onClick={() => setCount((count) => count + 1)}>
-        hello this is my ecommerce website {count}
-      </Button>
-    </>
-  );
+  return <Layout />;
 }
 
 export default App;

@@ -1,9 +1,9 @@
-import { ProductCard } from "../product-card";
-import headphoneImage from "../../assets/images/category-1.jpg";
-import watchImage from "../../assets/images/category-2.jpg";
+import ProductCard from '../product-card/product-card';
+import headphoneImage from '../../assets/images/category-1.jpg';
+import watchImage from '../../assets/images/category-2.jpg';
 
 interface SearchProductPanelProps {
-  layout: "list" | "card";
+  layout: 'list' | 'card';
 }
 
 const SearchProductPanel = ({ layout }: SearchProductPanelProps) => {

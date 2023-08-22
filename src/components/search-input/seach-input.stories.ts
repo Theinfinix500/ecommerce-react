@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import SearchInput from './Search-Input';
+import { SearchInput } from '.';
 
 const meta = {
   title: 'Library/Components/Search Input',
@@ -15,6 +15,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    placeholder: 'Search Products'
+    placeholder: 'Search Products',
   },
 };

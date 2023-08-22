@@ -1,15 +1,15 @@
-import { IoStar, IoHeartOutline } from "react-icons/io5";
-import "./product-card.css";
+import { IoStar, IoHeartOutline } from 'react-icons/io5';
+import './product-card.css';
 
 interface ProductCardProps {
-  layout?: "list" | "card";
+  layout?: 'list' | 'card';
   image: string;
 }
 
-const ProductCard = ({ image, layout = "card" }: ProductCardProps) => {
+const ProductCard = ({ image, layout = 'card' }: ProductCardProps) => {
   return (
-    <div className={layout === "list" ? "item-list" : ""}>
-      <div className="item-img h-[295px] w-[295px] bg-gray-100 rounded-lg relative">
+    <div className={layout === 'list' ? 'item-list' : ''}>
+      <div className="item-img h-[295px] min-w-[295px] bg-gray-100 rounded-lg relative">
         <img
           src={image}
           alt="product-image"
@@ -29,8 +29,8 @@ const ProductCard = ({ image, layout = "card" }: ProductCardProps) => {
         </p>
         <div className="flex items-center gap-1">
           <span className="flex items-center">
-            {Array.from({ length: 5 }, (_, i) => i + 1).map((_) => (
-              <IoStar className="text-green-600" />
+            {Array.from({ length: 5 }, (_, i) => i + 1).map((_, i) => (
+              <IoStar key={i} className="text-green-600" />
             ))}
           </span>
           <span className="text-gray-500 text-sm font-semibold">(121)</span>

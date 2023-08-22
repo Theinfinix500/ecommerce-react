@@ -1,6 +1,6 @@
-import { ProductCard } from ".";
 import { Meta, StoryObj } from "@storybook/react";
 import productImg from "../../assets/images/1.jpg";
+import { ProductCard } from ".";
 
 const meta = {
   title: "Library/Cards/Product Card",

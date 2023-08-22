@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { SearchProductPanel } from ".";
+import  SearchProductPanel  from "./search-product-panel";
 
 const meta = {
   title: "Library/Panels/Search Product Panel",

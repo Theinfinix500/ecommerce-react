@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import categoryImage from "../../assets/images/category-1.jpg";
-import { SearchCategoryCard } from ".";
+import  SearchCategoryCard  from "./search-category-card";
 
 const meta = {
   title: "Library/Cards/Search Category Card",

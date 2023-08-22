@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { SearchCategoryPanel } from ".";
+import  SearchCategoryPanel  from "./search-category-panel";
 
 const meta = {
   title: "Library/Panels/Search Category Panel",

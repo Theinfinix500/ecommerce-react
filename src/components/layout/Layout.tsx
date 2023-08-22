@@ -1,4 +1,5 @@
 import { Store, User, ShoppingCart, Phone } from 'lucide-react';
+import SearchInput from '../search-input/Search-Input';
 
 const Layout = () => {
   return (
@@ -33,7 +34,7 @@ const Layout = () => {
         </div>
         <div className="flex items-center gap-8">
           <div>
-            <input type="text" placeholder="Search Product" />
+            <SearchInput placeholder='Search Products' />
           </div>
           <div className="flex items-center gap-2">
             <User /> <span className="font-semibold">Account</span>
